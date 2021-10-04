@@ -1,6 +1,7 @@
 ## FactoryDesignPattern
 this repo i made from a series of design patterns using c# to improve my skills and help otehrs to improve their skills
-
+## How to make it work?
+- you should have at least .net core 5 or higher
 ## What is Factory Design Pattern in C#?
 - According to Gang of Four,
 the Factory Design Pattern states that “A factory is an object which is used for creating other objects”.
