@@ -27,24 +27,8 @@ namespace FactoryDesignPattern
          * */
         static void Main(string[] args)
         {
-            //Generally we will get the Card Type from UI.
-            //Here we are hardcoded the card type
-            string cardType = "Titanium";
-            CreditCard cardDetails = null;
-            //Based of the CreditCard Type we are creating the
-            //appropriate type instance using if else condition
-            if (cardType == "MoneyBack")
-            {
-                cardDetails = new MoneyBack();
-            }
-            else if (cardType == "Titanium")
-            {
-                cardDetails = new Titanium();
-            }
-            else if (cardType == "Platinum")
-            {
-                cardDetails = new Platinum();
-            }
+            CreditCard cardDetails = CreditCardFactory.GetCreditCard("Platinum");
+
             if (cardDetails != null)
             {
                 Console.WriteLine("CardType : " + cardDetails.GetCardType());
